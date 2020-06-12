@@ -5,9 +5,9 @@ purple2: '#2d2c5d'
 blue: '#82aaff'
 yellow: '#ecc48d'
 green: '#addb67'
-green2: '#7fdbca'
 orange: '#f78c6c'
 red: '#EF5350'
+watermelon: '#fd5773'
 # FIXME - should be editor.lineHighlightBackground
 lineHighlightBackground: '#112630'
 lineNumber: '#4b6479'
@@ -15,7 +15,6 @@ lineNumberHighlight: '#C5E4FD'
 
 mint: '#7fdbca'
 
-htmlTag: '#7fdbca'
 htmlAttributeValue: '#FAD430'
 jsxTag: '#f78c6c'
 
@@ -25,10 +24,9 @@ gray: '#637777'
 gray2: '#222222'
 gray3: '#333333'
 gray4: '#444444'
+gray5: '#777777'
 
-
-dark: '#011627'
-
+greyblue: '#5f7e97'
 neardark: '#112630'
 
 highlight: '#eeeeee'

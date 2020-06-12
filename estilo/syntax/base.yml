@@ -12,10 +12,9 @@ DiffDelete: ''
 DiffText: ''
 ErrorMsg: ''
 VertSplit: 'background . .'
-Folded: ''
-FoldColumn: ''
-SignColumn: ''
-IncSearch: 'highlight yellow'
+Folded: 'gray5 background'
+FoldColumn: 'gray3 background'
+SignColumn: '- background'
 LineNr: 'lineNumber background'
 CursorLineNr: 'lineNumberHighlight'
 Normal: 'foreground background'
@@ -30,8 +29,9 @@ PMenuSel: '. purple'
 PmenuSbar: ''
 PmenuThumb: ''
 Question: ''
+IncSearch: 'highlight yellow'
 # Search -> when pressing *
-Search: 'dark highlight'
+Search: 'background yellow'
 SpecialKey: ''
 SpellBad: ''
 SpellLocal: ''
@@ -55,7 +55,7 @@ Character: '' # Constant
 Boolean: '#ff5874 .' # Constant
 Number: 'orange .' # Constant
 Float: '' # Constant
-Identifier: 'green2 .'
+Identifier: 'mint .'
 
 Function: 'purple .' # Identifier
 Statement: 'purple . i'
@@ -87,7 +87,7 @@ Error: ''
 Todo: ''
 
 # html
-htmlTag: 'htmlTag .'
+htmlTag: 'mint .'
 htmlEndTag: '@htmlTag'
 htmlTagName: 'red . i'
 
@@ -138,5 +138,23 @@ typescriptExport: '@CLExport'
 typescriptBraces: 'foreground .'
 typescriptParens: '@typescriptBraces'
 
+# Python
+pythonImport: 'purple . i'
+pythonFunction: 'blue . i'
+pythonStatement: 'purple .'
+pythonNone: 'watermelon'
+pythonBuiltinFunc: 'green'
+pythonDottedName: 'green'
+pythonDecorator: 'green'
+pythonClassVar: 'mint'
+
 
 # Yaml
+
+##### nerd tree
+NERDTreeDir: 'foreground .'
+NERDTreeOpenable: 'foreground .'
+NERDTreeClosable: 'foreground .'
+NERDTreeHelp: 'gray4 . i'
+NERDTreeUp: 'gray .'
+NERDTreeDirSlash: 'gray .'

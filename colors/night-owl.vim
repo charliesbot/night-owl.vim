@@ -4,7 +4,7 @@
 " URL: 
 " Author: Charlie L
 " License: MIT
-" Last Change: 2020/06/11 19:39
+" Last Change: 2020/06/11 20:30
 " ===============================================================
 
 set background=dark
@@ -30,14 +30,17 @@ let g:night-owl_bold = get(g:, 'night-owl_bold', 0)
 hi ColorColumn guifg=#EF5350 ctermfg=203 gui=NONE cterm=NONE
 hi CursorLine guibg=#112630 ctermbg=235 gui=NONE cterm=NONE
 hi VertSplit guifg=#011627 ctermfg=233
-hi IncSearch guifg=#eeeeee ctermfg=255 guibg=#ecc48d ctermbg=222 gui=NONE cterm=NONE
+hi Folded guifg=#777777 ctermfg=243 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
+hi FoldColumn guifg=#333333 ctermfg=236 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
+hi SignColumn guifg=NONE ctermfg=NONE guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi LineNr guifg=#4b6479 ctermfg=60 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi CursorLineNr guifg=#C5E4FD ctermfg=189 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Normal guifg=#d6deeb ctermfg=253 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi NonText guifg=#444444 ctermfg=238 gui=NONE cterm=NONE
 hi PMenu guibg=#2d2c5d ctermbg=236 gui=NONE cterm=NONE
 hi PMenuSel guibg=#c792ea ctermbg=176 gui=NONE cterm=NONE
-hi Search guifg=#011627 ctermfg=233 guibg=#eeeeee ctermbg=255 gui=NONE cterm=NONE
+hi IncSearch guifg=#eeeeee ctermfg=255 guibg=#ecc48d ctermbg=222 gui=NONE cterm=NONE
+hi Search guifg=#011627 ctermfg=233 guibg=#ecc48d ctermbg=222 gui=NONE cterm=NONE
 hi Comment guifg=#637777 ctermfg=243 gui=Italic cterm=Italic
 hi Constant guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
 hi String guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
@@ -95,6 +98,20 @@ hi typescriptObjectLabel guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
 hi link typescriptExport CLExport
 hi typescriptBraces guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
 hi link typescriptParens typescriptBraces
+hi pythonImport guifg=#c792ea ctermfg=176 gui=Italic cterm=Italic
+hi pythonFunction guifg=#82aaff ctermfg=111 gui=Italic cterm=Italic
+hi pythonStatement guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
+hi pythonNone guifg=#fd5773 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonBuiltinFunc guifg=#addb67 ctermfg=149 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonDottedName guifg=#addb67 ctermfg=149 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonDecorator guifg=#addb67 ctermfg=149 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonClassVar guifg=#7fdbca ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi NERDTreeDir guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
+hi NERDTreeOpenable guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
+hi NERDTreeClosable guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
+hi NERDTreeHelp guifg=#444444 ctermfg=238 gui=Italic cterm=Italic
+hi NERDTreeUp guifg=#637777 ctermfg=243 gui=NONE cterm=NONE
+hi NERDTreeDirSlash guifg=#637777 ctermfg=243 gui=NONE cterm=NONE
 
 if exists('*term_setansicolors')
   let g:terminal_ansi_colors = repeat([0], 16)

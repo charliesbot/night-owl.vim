@@ -2,7 +2,7 @@ name: 'night-owl'
 version: '1.0.0'
 license: 'MIT'
 author: 'Charlie L'
-url: ''
+url: 'https://github.com/charliesbot/night-owl.vim'
 description: ''
 colorschemes:
   - name: night-owl

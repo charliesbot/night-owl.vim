@@ -1,4 +1,7 @@
 {
+  "name": "night-owl.vim",
+  "repository": "git@github.com:charliesbot/night-owl.vim.git",
+  "author": "Charlie L <charliesbot@gmail.com>",
   "scripts": {
     "watch": "watch 'estilo render' estilo/",
     "start": "yarn watch"

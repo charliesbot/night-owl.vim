@@ -4,7 +4,7 @@
 " URL: 
 " Author: Charlie L
 " License: MIT
-" Last Change: 2020/06/11 20:30
+" Last Change: 2020/06/11 20:52
 " ===============================================================
 
 set background=dark
@@ -62,6 +62,23 @@ hi CLArrowFunction guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi CLVariableDeclaration guifg=#82aaff ctermfg=111 gui=Italic cterm=Italic
 hi CLGrammarSymbols guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi CLExport guifg=#c792ea ctermfg=176 gui=Italic cterm=Italic
+hi link jsConditional Statement
+hi jsClassKeyword guifg=#c792ea ctermfg=176 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsClassDefinition guifg=#ecc48d ctermfg=222 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsExtendsKeyword guifg=#c792ea ctermfg=176 gui=Italic cterm=Italic
+hi jsClassFuncName guifg=#82aaff ctermfg=111 gui=Italic cterm=Italic
+hi link jsClassProperty jsClassFuncName
+hi link jsFuncCall jsClassFuncName
+hi jsFunction guifg=#c792ea ctermfg=176 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsExport guifg=#c792ea ctermfg=176 gui=Italic cterm=Italic
+hi link jsExportDefault jsExport
+hi jsSuper guifg=#7fdbca ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsThis guifg=#7fdbca ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsObjectProp guifg=#7fdbca ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsObjectKey guifg=#c792ea ctermfg=176 gui=Italic cterm=Italic
+hi jsObjectValue guifg=#7fdbca ctermfg=116 gui=Italic cterm=Italic
+hi jsDot guifg=#c792ea ctermfg=176 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsNull guifg=#fd5773 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link jsArrowFunction CLArrowFunction
 hi link jsString String
 hi jsOperator guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
@@ -70,6 +87,7 @@ hi link jsFrom jsImport
 hi link jsReturn Statement
 hi link jsStorageClass StorageClass
 hi jsDestructuringBlock guifg=#EF5350 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsVariableDef guifg=#82aaff ctermfg=111 gui=Italic cterm=Italic
 hi link jsxTagName htmlTag
 hi jsxComponentName guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
 hi link jsxOpenPunct htmlTag

@@ -1,0 +1,142 @@
+# BASE UI
+ColorColumn: 'red .'
+Conceal: ''
+Cursor: ''
+CursorIM: ''
+CursorColumn: ''
+CursorLine: '. lineHighlightBackground'
+Directory: ''
+DiffAdd: ''
+DiffChange: ''
+DiffDelete: ''
+DiffText: ''
+ErrorMsg: ''
+VertSplit: 'background . .'
+Folded: ''
+FoldColumn: ''
+SignColumn: ''
+IncSearch: 'highlight yellow'
+LineNr: 'lineNumber background'
+CursorLineNr: 'lineNumberHighlight'
+Normal: 'foreground background'
+MatchParen: ''
+ModeMsg: ''
+MoreMsg: ''
+
+NonText: 'gray4 .'
+PMenu: '. purple2'
+PMenuSel: '. purple'
+
+PmenuSbar: ''
+PmenuThumb: ''
+Question: ''
+# Search -> when pressing *
+Search: 'dark highlight'
+SpecialKey: ''
+SpellBad: ''
+SpellLocal: ''
+SpellCap: ''
+SpellRare: ''
+StatusLine: ''
+StatusLineNC: ''
+TabLine: ''
+TabLineFill: ''
+TabLineSel: ''
+Title: ''
+Visual: ''
+VisualNOS: ''
+WarningMsg: ''
+WildMenu: ''
+# BASE SYNTAX
+Comment: 'gray . i'
+Constant: 'green .'
+String: 'yellow .' # Constant
+Character: '' # Constant
+Boolean: '#ff5874 .' # Constant
+Number: 'orange .' # Constant
+Float: '' # Constant
+Identifier: 'green2 .'
+
+Function: 'purple .' # Identifier
+Statement: 'purple . i'
+Conditional: '' # Statement
+Repeat: '' # Statement
+Label: '' # Statement
+Operator: 'purple .' # Statement
+Keyword: 'green .' # Statement
+Exception: '' # Statement
+PreProc: 'purple .'
+Include: '' # PreProc
+Define: '' # PreProc
+Macro: '' # PreProc
+PreCondit: '' # PreProc
+Type: 'green . i'
+# let or const
+StorageClass: 'purple .' # Type
+Structure: '' # Type
+Typedef: '' # Type
+Special: ''
+SpecialChar: '' # Special
+Tag: 'gray' # Special
+Delimiter: '' # Special
+SpecialComment: '' # Special
+Debug: '' # Special
+Underlined: ''
+Ignore: ''
+Error: ''
+Todo: ''
+
+# html
+htmlTag: 'htmlTag .'
+htmlEndTag: '@htmlTag'
+htmlTagName: 'red . i'
+
+# Javascript - pangloss/vim-javascript
+CLArrowFunction: 'purple .'
+CLVariableDeclaration: 'blue . i'
+CLGrammarSymbols: 'purple .'
+CLExport: 'purple . i'
+
+jsArrowFunction: '@CLArrowFunction'
+jsString: '@String'
+jsOperator: 'purple .'
+jsImport: 'purple . i'
+jsFrom: '@jsImport'
+jsReturn: '@Statement'
+jsStorageClass: '@StorageClass'
+jsDestructuringBlock: 'red'
+
+# JSX
+jsxTagName: '@htmlTag'
+jsxComponentName: 'jsxTag .'
+jsxOpenPunct: '@htmlTag'
+jsxCloseString: '@htmlTag'
+jsxExpressionBlock: 'foreground .'
+jsxBraces: 'red .'
+
+# Typescript
+typescriptCall: 'foreground .'
+typescriptImport: '@jsImport'
+typescriptBinaryOp: 'purple .'
+typescriptStatementKeyword: '@Statement'
+typescriptVariable: '@StorageClass'
+typescriptMember: '@CLVariableDeclaration'
+typescriptVariableDeclaration: '@CLVariableDeclaration'
+typescriptBlock: 'foreground .'
+typescriptAliasDeclaration: 'foreground .'
+typescriptAliasKeyword: 'purple .'
+typescriptAssign: '@Operator'
+typescriptTypeReference: 'yellow . i'
+typescriptUnion: 'mint .'
+typescriptArrowFunc: '@CLArrowFunction'
+typescriptTypeAnnotation: 'mint .'
+typescriptDotNotation: '@CLGrammarSymbols'
+typescriptTypeBrackets: '@CLGrammarSymbols'
+typescriptProp: 'mint . i'
+typescriptObjectLabel: 'foreground .'
+typescriptExport: '@CLExport'
+typescriptBraces: 'foreground .'
+typescriptParens: '@typescriptBraces'
+
+
+# Yaml

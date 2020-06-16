@@ -7,6 +7,7 @@
 " Last Change: 2020/06/15 20:57
 " ===============================================================
 
+
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -15,7 +16,6 @@ endif
 let g:colors_name="night-owl"
 
 
-let g:night-owl_bold = get(g:, 'night-owl_bold', 0)
 hi ColorColumn guifg=#fd5773 ctermfg=203 gui=NONE cterm=NONE
 hi CursorLine guibg=#112630 ctermbg=235 gui=NONE cterm=NONE
 hi DiffAdd guifg=#011627 ctermfg=233 guibg=#addb67 ctermbg=149 gui=NONE cterm=NONE

@@ -1,15 +1,15 @@
 # BASE UI
-ColorColumn: 'red .'
+ColorColumn: 'watermelon .'
 Conceal: ''
 Cursor: ''
 CursorIM: ''
 CursorColumn: ''
 CursorLine: '. lineHighlightBackground'
 Directory: ''
-DiffAdd: ''
-DiffChange: ''
-DiffDelete: ''
-DiffText: ''
+DiffAdd: 'background lime'
+DiffChange: 'background orange'
+DiffDelete: 'background watermelon'
+DiffText: 'background lime'
 ErrorMsg: ''
 VertSplit: 'background . .'
 Folded: 'gray5 background'
@@ -23,56 +23,56 @@ ModeMsg: ''
 MoreMsg: ''
 
 NonText: 'gray4 .'
-PMenu: '. purple2'
-PMenuSel: '. purple'
+PMenu: '. eggplant'
+PMenuSel: '. plum'
 
 PmenuSbar: ''
 PmenuThumb: ''
 Question: ''
-IncSearch: 'highlight yellow'
+IncSearch: 'highlight orange'
 # Search -> when pressing *
-Search: 'background yellow'
-SpecialKey: ''
+Search: 'background orange'
+SpecialKey: 'orange .'
 SpellBad: ''
 SpellLocal: ''
 SpellCap: ''
 SpellRare: ''
-StatusLine: ''
-StatusLineNC: ''
+StatusLine: 'highlight neardark'
+StatusLineNC: 'gray5 neardark'
 TabLine: ''
 TabLineFill: ''
 TabLineSel: ''
-Title: ''
-Visual: ''
+Title: 'blueberry . b'
+Visual: 'foreground eggplant'
 VisualNOS: ''
 WarningMsg: ''
 WildMenu: ''
 # BASE SYNTAX
 Comment: 'gray . i'
-Constant: 'green .'
-String: 'yellow .' # Constant
+Constant: 'lime .'
+String: 'orange .' # Constant
 Character: '' # Constant
 Boolean: '#ff5874 .' # Constant
-Number: 'orange .' # Constant
+Number: 'tangerine .' # Constant
 Float: '' # Constant
 Identifier: 'mint .'
 
-Function: 'purple .' # Identifier
-Statement: 'purple . i'
+Function: 'plum .' # Identifier
+Statement: 'plum . i'
 Conditional: '' # Statement
 Repeat: '' # Statement
 Label: '' # Statement
-Operator: 'purple .' # Statement
-Keyword: 'green .' # Statement
+Operator: 'plum .' # Statement
+Keyword: 'lime .' # Statement
 Exception: '' # Statement
-PreProc: 'purple .'
+PreProc: 'plum .'
 Include: '' # PreProc
 Define: '' # PreProc
 Macro: '' # PreProc
 PreCondit: '' # PreProc
-Type: 'green . i'
+Type: 'lime . i'
 # let or const
-StorageClass: 'purple .' # Type
+StorageClass: 'plum .' # Type
 Structure: '' # Type
 Typedef: '' # Type
 Special: ''
@@ -89,63 +89,63 @@ Todo: ''
 # html
 htmlTag: 'mint .'
 htmlEndTag: '@htmlTag'
-htmlTagName: 'red . i'
+htmlTagName: 'watermelon . i'
 
 # Javascript - pangloss/vim-javascript
-CLArrowFunction: 'purple .'
-CLVariableDeclaration: 'blue . i'
-CLGrammarSymbols: 'purple .'
-CLExport: 'purple . i'
+CLArrowFunction: 'plum .'
+CLVariableDeclaration: 'blueberry . i'
+CLGrammarSymbols: 'plum .'
+CLExport: 'plum . i'
 
 # Javascript
 jsConditional: '@Statement'
-jsClassKeyword: 'purple'
-jsClassDefinition: 'yellow'
-jsExtendsKeyword: 'purple . i'
-jsClassFuncName: 'blue . i'
+jsClassKeyword: 'plum'
+jsClassDefinition: 'orange'
+jsExtendsKeyword: 'plum . i'
+jsClassFuncName: 'blueberry . i'
 jsClassProperty: '@jsClassFuncName'
 jsFuncCall: '@jsClassFuncName'
-jsFunction: 'purple'
-jsExport: 'purple . i'
+jsFunction: 'plum'
+jsExport: 'plum . i'
 jsExportDefault: '@jsExport'
 jsSuper: 'mint'
 jsThis: 'mint'
 jsObjectProp: 'mint'
-jsObjectKey: 'purple . i'
+jsObjectKey: 'plum . i'
 jsObjectValue: 'mint . i'
-jsDot: 'purple'
+jsDot: 'plum'
 jsNull: 'watermelon'
 jsArrowFunction: '@CLArrowFunction'
 jsString: '@String'
-jsOperator: 'purple .'
-jsImport: 'purple . i'
+jsOperator: 'plum .'
+jsImport: 'plum . i'
 jsFrom: '@jsImport'
 jsReturn: '@Statement'
 jsStorageClass: '@StorageClass'
-jsDestructuringBlock: 'red'
-jsVariableDef: 'blue . i'
+jsDestructuringBlock: 'watermelon'
+jsVariableDef: 'blueberry . i'
 
 # JSX
 jsxTagName: '@htmlTag'
-jsxComponentName: 'jsxTag .'
+jsxComponentName: 'tangerine .'
 jsxOpenPunct: '@htmlTag'
 jsxCloseString: '@htmlTag'
 jsxExpressionBlock: 'foreground .'
-jsxBraces: 'red .'
+jsxBraces: 'blueberry .'
 
 # Typescript
 typescriptCall: 'foreground .'
 typescriptImport: '@jsImport'
-typescriptBinaryOp: 'purple .'
+typescriptBinaryOp: 'plum .'
 typescriptStatementKeyword: '@Statement'
 typescriptVariable: '@StorageClass'
 typescriptMember: '@CLVariableDeclaration'
 typescriptVariableDeclaration: '@CLVariableDeclaration'
 typescriptBlock: 'foreground .'
 typescriptAliasDeclaration: 'foreground .'
-typescriptAliasKeyword: 'purple .'
+typescriptAliasKeyword: 'plum .'
 typescriptAssign: '@Operator'
-typescriptTypeReference: 'yellow . i'
+typescriptTypeReference: 'orange . i'
 typescriptUnion: 'mint .'
 typescriptArrowFunc: '@CLArrowFunction'
 typescriptTypeAnnotation: 'mint .'
@@ -158,22 +158,59 @@ typescriptBraces: 'foreground .'
 typescriptParens: '@typescriptBraces'
 
 # Python
-pythonImport: 'purple . i'
-pythonFunction: 'blue . i'
-pythonStatement: 'purple .'
+pythonImport: 'plum . i'
+pythonFunction: 'blueberry . i'
+pythonStatement: 'plum .'
 pythonNone: 'watermelon'
-pythonBuiltinFunc: 'green'
-pythonDottedName: 'green'
-pythonDecorator: 'green'
+pythonBuiltinFunc: 'lime'
+pythonDottedName: 'lime'
+pythonDecorator: 'lime'
 pythonClassVar: 'mint'
+
+# CSS
+cssClassName: 'lime . i'
+cssClassNameDot: '@cssClassName'
+cssIdentifier: 'pineapple . i'
+cssTagName: 'watermelon .'
+cssBraces: 'foreground .'
+cssUnitDecorators: 'banana .'
+cssFontProp: 'mint .'
+cssPositioningProp: '@cssFontProp'
+cssBackgroundProp: '@cssFontProp'
+cssDefinition: '@cssFontProp'
+cssFontAttr: '@cssUnitDecorators'
+cssColor: '@cssFontAttr'
 
 
 # Yaml
 
 ##### nerd tree
-NERDTreeDir: 'foreground .'
-NERDTreeOpenable: 'foreground .'
-NERDTreeClosable: 'foreground .'
+NERDTreeDir: 'greyblue .'
+NERDTreeOpenable: 'watermelon .'
+NERDTreeClosable: 'orange .'
 NERDTreeHelp: 'gray4 . i'
 NERDTreeUp: 'gray .'
 NERDTreeDirSlash: 'gray .'
+
+# Git
+GitGutterAdd: 'lime .'
+GitGutterChange: 'orange .'
+GitGutterDelete: 'watermelon .'
+GitGutterChangeDelete: 'orange .'
+gitcommitSummary: 'foreground .'
+
+# Markdown and MDX
+markdownInlineDelimiter: 'plum . i'
+markdownItalic: 'plum . i'
+markdownBold: 'lime . b'
+markdownItemDelimiter: 'foreground .'
+markdownH1: 'blueberry .'
+markdownH2: '@markdownH1'
+markdownH3: '@markdownH1'
+markdownH4: '@markdownH1'
+markdownHeadingDelimiter: '@markdownH1'
+markdownLinkTextContainer: 'blueberry .'
+markdownLinkUrlContainer: 'mint .'
+markdownLinkText: 'foreground .'
+markdownLinkUrl: 'strawberry .'
+markdownRule: 'foreground .'

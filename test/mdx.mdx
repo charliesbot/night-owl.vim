@@ -1,0 +1,185 @@
+---
+slug: fantastic-web-components-and-where-to-find-them
+date: 2019-06-09
+title: 'Fantastic web components and where to find them'
+hero: ./images/hero.jpg
+description: 'Sharing your custom components to the world is possible. No frameworks needed.'
+published: true
+categories: ['web-components', 'javascript']
+keywords: ['web-components', 'shadow-dom', 'stencil']
+author: 'Charlie L'
+---
+
+So, you built a fantastic component using your favorite framework/library, let's say, React. A button, a dropdown, call it what you want.
+
+It fitted perfectly in your project, and you are proud of what you did.
+
+Then, a workmate sees that component. That solves a problem her team has! When she tried to use it, she discovers a tremendous blocker.
+
+Her team is using *Vue*.
+
+## The framework dependence
+
+React, Angular, and Vue were the pioneers of the component revolution. Their declarative API taught us how to create scalable elements. Props, lifecycles, and more.
+
+Some years later, we are using those tools for every single piece of our projects. Yes, to build everything.
+
+Want a button? Let's use React for that.
+What about a Label? Sure, let's Vue it.
+
+And so on.
+
+## The core problem
+
+Let's say we're building a super button.
+
+React:
+
+```jsx
+/* SupperButton.js */
+const SuperButton =
+    ({ onClick }) => <button onClick={onClick}>Button</button>
+```
+
+Vue:
+
+```html
+/* SupperButton.vue */
+<template>
+    <button @click="onClick">
+      <slot>Button</slot>
+    </button>
+</template>
+```
+
+Even with a syntax that looks a little bit different, in essence, we're repeating most of the code in both solutions.
+
+The core bones of each of those components are the same. We may prefer one approach or the other to handle business logic and the way the components relate to each other, but the soul of the building blocks are the same.
+
+# A sharing problem
+
+Most of the teams that I worked with built a component library to reuse everywhere. The funny thing is, each team redo this library according to the tech stack they are using.
+
+They are not looking for vanilla versions of bootstrap or material-design. They are looking for react-bootstrap or react-material.
+
+What if we could follow real standards to build the basics, and use these smart frameworks to orchestrate the use of them?
+
+# Cause sharing components across realms is fun
+
+Web components are *kind of* a new standard for the web.
+
+They let us add new HTML Elements that the browser can understand natively.
+
+That's right! You don't need a library or a framework to create components: just some javascript and the right name for it.
+
+Web components are identifiable because they have a dash (-) in its name.
+
+```html
+<super-button />
+```
+
+# Thousands of possibilities. A single API.
+
+You probably have seen implementations of several design languages, like Material Design.
+
+Isn't it weird that there are libraries that cover each framework? React, Angular, Vue, you name it.
+They do a button, a text area, or an input wrapped with some CSS to follow the conventions, and the framework interface to let us use it in our current projects.
+
+Competition is excellent (and necessary!). However, that's great if those implementations could be used no matter the tech stack. We are talking about essential components, that shouldn't know the complexity of our app. Let's make that dream true.
+
+# Come on! Let's find a wild component!
+
+Let's work with that super button in mind.
+
+```js
+class SuperButton extends HTMLElement {
+  get size() {
+    return this.getAttribute("size") || "small";
+  }
+
+  constructor() {
+    super();
+    this.shadow = this.attachShadow({ mode: "open" });
+  }
+
+  connectedCallback() {
+    this.shadow.innerHTML += `
+      <style>
+        button {
+          background-color: purple;
+          color: white;
+          border-radius: 2px;
+        }
+        .big {
+          min-width: 200px;
+          height: 100px;
+        }
+        .small {
+          min-width: 100;
+          height: 50;
+        }
+      </style>
+
+      <button class="${this.size}">
+        <slot />
+      </button>
+      `;
+  }
+}
+
+window.customElements.define("super-button", SuperButton);
+
+// <super-button size="big">I'm a super button!<super-button>
+```
+
+Let's see what is happening here!
+
+There are some main concepts regarding Web Components.
+
+## Custom Elements by extending from HTMLElement
+HTMLElement lets us create new elements that encapsulate our custom component.
+
+## Shadow DOM
+In the dark era of the web, an *iframe* was an option to scope CSS, HTML, and JS.
+Now that we are talking about web components, we would love to accomplish the same, without using this hacky solution.
+
+Luckily, we have now Shadow DOM, which let us do exactly that. It allows us to create fragments attached to a scoped host.
+
+The big picture is: we're declaring scopes were our styles and dom is attached, and our styles, for example, won't clash
+with others outside this scope.
+This is a big deal!
+
+## Lifecycle
+![webcomponents_lifecycle](./images/lifecycle.jpeg)
+
+Web components have lifecycles!
+
+In this example, we are using *connectedCallback*.
+
+When the web component arrives at the DOM, the shadow DOM is not attached to the tag.
+You may see that they flash while they're getting the resources and the styles.
+
+This callback is triggered when the whole component is ready, so we can start doing our magic, like reading attributes, for example.
+
+# Tradeoffs
+
+We may agree that the API is a little bit verbose. That's probably the main throwback if you are used to React or Vue, where defining a component and its props are more straightforward and more declarative.
+
+Fortunately, other developers are stepping up with solutions like **[Stencil](https://stenciljs.com)**.
+Tools that reduce the boilerplate without adding any dependency, as they act just as compilers.
+
+# Last thoughts
+
+So we are ready to go!
+
+This web component is ready to rock in every environment. It doesn't care about frameworks; it relies on native APIs!
+
+Of course, I'm not implying we should stop using frameworks. React/Vue/Angular do way more than just components. They offer an all-in-one solution and a lot of improvements and helpers that are extremely valuable to deliver solutions.
+
+However, when talking about the core bones of our application, web components make total sense:
+- If there are several teams in your company and want to maintain a single design system.
+- If you want the freedom to experiment with new technologies, and reuse the foundation.
+
+As you can see, it's all about delegating the basics to the APIs the browser already deliver, and let the frameworks do the hard things.
+
+Start playing with it, and let me know what your experience with it is!

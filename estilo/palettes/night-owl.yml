@@ -1,13 +1,5 @@
 background: '#011627'
 foreground: '#d6deeb'
-purple: '#c792ea'
-purple2: '#2d2c5d'
-blue: '#82aaff'
-yellow: '#ecc48d'
-green: '#addb67'
-orange: '#f78c6c'
-red: '#EF5350'
-watermelon: '#fd5773'
 # FIXME - should be editor.lineHighlightBackground
 lineHighlightBackground: '#112630'
 lineNumber: '#4b6479'
@@ -15,12 +7,11 @@ lineNumberHighlight: '#C5E4FD'
 
 mint: '#7fdbca'
 
-htmlAttributeValue: '#FAD430'
-jsxTag: '#f78c6c'
 
 # old
 
-gray: '#637777'
+# gray: '#637777'
+gray: '#697098'
 gray2: '#222222'
 gray3: '#333333'
 gray4: '#444444'
@@ -35,3 +26,18 @@ highlight: '#eeeeee'
 # test
 cyan: '#E0FFFF'
 magenta: '#FF00FF'
+
+# Final palette
+strawberry: '#ff869a'
+watermelon: '#fd5773'
+orange: '#ecc48d'
+tangerine: '#f78c6c'
+lime: '#addb67'
+
+plum: '#c792ea'
+blueberry: '#82aaff'
+eggplant: '#2d2c5d'
+
+lemon: '#faf39f'
+banana: '#ffeb95'
+pineapple: '#fad430'

@@ -14,5 +14,5 @@
 `Plugin 'charliesbot/night-owl.vim'`
 
 ## Inspiration
-Original VS Code theme by Sarah Drasner: https://github.com/sdras/night-owl-vscode-theme/
-Vim theme by Haishan: https://github.com/haishanh/night-owl.vim
+- Original VS Code theme by Sarah Drasner: https://github.com/sdras/night-owl-vscode-theme/
+- Vim theme by Haishan: https://github.com/haishanh/night-owl.vim

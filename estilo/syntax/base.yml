@@ -47,6 +47,7 @@ Visual: 'foreground eggplant'
 VisualNOS: ''
 WarningMsg: ''
 WildMenu: ''
+
 # BASE SYNTAX
 Comment: 'gray . i'
 Constant: 'lime .'
@@ -156,6 +157,11 @@ typescriptObjectLabel: 'foreground .'
 typescriptExport: '@CLExport'
 typescriptBraces: 'foreground .'
 typescriptParens: '@typescriptBraces'
+
+# JSON
+jsonBraces: 'foreground .'
+jsonKeyword: 'mint .'
+jsonString: 'plum .'
 
 # Python
 pythonImport: 'plum . i'

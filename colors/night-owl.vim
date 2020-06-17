@@ -4,7 +4,7 @@
 " URL: https://github.com/charliesbot/night-owl.vim
 " Author: Charlie L
 " License: MIT
-" Last Change: 2020/06/15 21:08
+" Last Change: 2020/06/16 20:37
 " ===============================================================
 
 set background=dark
@@ -110,6 +110,9 @@ hi typescriptObjectLabel guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
 hi link typescriptExport CLExport
 hi typescriptBraces guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
 hi link typescriptParens typescriptBraces
+hi jsonBraces guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
+hi jsonKeyword guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
+hi jsonString guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi pythonImport guifg=#c792ea ctermfg=176 gui=Italic cterm=Italic
 hi pythonFunction guifg=#82aaff ctermfg=111 gui=Italic cterm=Italic
 hi pythonStatement guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
